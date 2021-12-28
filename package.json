@@ -1,0 +1,32 @@
+{
+  "name": "aoc2021",
+  "main": "./dist/main.js",
+  "exports": {
+    ".": "./dist/main.js"
+  },
+  "typesVersions": {
+    "*": {
+      "main.d.ts": [
+        "dist/main.d.ts"
+      ]
+    }
+  },
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf ./dist",
+    "debug": "nodemon --exec 'yarn build && node --inspect-brk dist/main'",
+    "start": "yarn clean && yarn build && node dist/main"
+  },
+  "dependencies": {
+    "chalk": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.5",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.5.4"
+  }
+}

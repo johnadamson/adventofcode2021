@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Attach",
+				"type": "node",
+				"request": "attach",
+				"restart": true,
+				"port": 9229,
+				"localRoot": "${workspaceFolder}",
+				"sourceMaps": true
+			}
+		],
+	},
+	"settings": {
+		"javascript.preferences.importModuleSpecifierEnding": "js",
+		"typescript.preferences.importModuleSpecifierEnding": "js"
+	}
+}
